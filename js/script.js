@@ -19,7 +19,7 @@ document.write ('------------- NUMBER 3 -------------' + '<br>')
 let arr3 = [];
 let result = 0;
 for (let i = 23; i <= 57; i++) {
-    arr3[i] = i
+    arr3[i] = i // что это значит?
     document.write (arr3[i] + ' ')
     result += i;
 }
@@ -42,22 +42,51 @@ for (let i=0; i < arr5.length; i++) {
         document.write('<b>' + arr5[i]+' ' + '</b>');
     }
     else {
-        document.write(arr5[i]+' ')
+        document.write(arr5[i]+' ' )
     }
 }
 //--------------------------------------------
 // NUMBER 6
-console.log ('------------- NUMBER 6 -------------')
+document.write ('<br>'+'------------- NUMBER 6 -------------' + '<br>')
+let arr6 = ["Один", "Два", "Три", "Четыре", "Пять", "Шесть", "Семь"];
+arr6 [arr6.length] = "Восемь";
+document.write (arr6 [arr6.length - 1]) 
 //--------------------------------------------
 // NUMBER 7
-console.log ('------------- NUMBER 7 -------------')
+document.write ('<br>'+'------------- NUMBER 7 -------------' + '<br>')
+let arr7;
+let arr70 = [];
+while (true) {
+	arr7 = prompt ("Введите число");
+	if (!+arr7) { // if (arr7 == " ") почему не работает с двумя пробелами и большe?
+		break;
+	}
+	else {
+		arr70.push (arr7);
+	}
+}
+ arr70.sort(function(a, b) {return a - b }); 
+document.write (arr70);
 //--------------------------------------------
 // NUMBER 8
-console.log ('------------- NUMBER 8 -------------')
+document.write ('<br>' + '------------- NUMBER 8 -------------'+ '<br>')
+let arr8 = [12, false, "Текст", 4, 2, -5, 0],
+i=0;
+while (i < arr8.length) {
+    arr8.reverse ();
+    i++;// зачем тут это?
+}
+document.write (arr8);
 //--------------------------------------------
 // NUMBER 9
-console.log ('------------- NUMBER 9 -------------')
+document.write ('<br>' + '------------- NUMBER 9 -------------'+ '<br>')
+let arr9 = [5, 9, 21, , , 9, 78, , , , 6],
+kol = 0;
+for (let i = 0; i < arr9.length; i++) {
+    if (arr9[i]== undefined) (kol ++)
+}
+document.write ("Количество пустых элементов массива = " + kol + '<br>') ;
 //--------------------------------------------
 // NUMBER 10
 console.log ('------------- NUMBER 10 -------------')
-//-------------------------------------------
+//--------------------------------------------
